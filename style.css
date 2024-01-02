@@ -22,8 +22,8 @@ body {
     padding: 0;
 }
 .Techmax {
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .hello {
     border: 1px solid rgba(12, 90, 12, 0.822);
@@ -68,6 +68,4 @@ body {
   }
   .party{
      background-image:  linear-gradient(rgba(253, 252, 253, 0.911), rgba(208, 209, 209, 0.712)), url(16.jpg) ;
-   
-
   }
