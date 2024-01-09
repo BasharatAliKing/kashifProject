@@ -345,8 +345,8 @@ var VanillaTilt = (function () {
           "position": "absolute",
           "top": "50%",
           "left": "50%",
-          "pointer-events": "none",
-          "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+          // "pointer-events": "none",
+          // "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
           "transform": "rotate(180deg) translate(-50%, -50%)",
           "transform-origin": "0% 0%",
           "opacity": "0"
