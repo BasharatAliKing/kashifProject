@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,33 +14,35 @@
     <link rel="shorcut icon" href="images/Logo.png">
 </head>
 <body>
-  <header class=" bg-green-600">
-    <nav class=" flex justify-center space-x-4 gap-10 items-center px-2">
-        <div class="">
-            <img class=" w-40"src="images/Logo.png"alt="">
-        </div>
-        <div id="nav-menu" class="hidden lg:block md:block">
-            <ul
-                class="flex justify-center pl-6 items-center gap-3 text-lg font-semibold ">
-                <li><a href="#" class="text-gray-200 duration-500">Home </a></li>
-                <li><a href="#" class="hover:text-gray-200 duration-500">About</a></li>
-                <li><a href="#" class="hover:text-gray-200 duration-500">Services +</a></li>
-                <li><a href="#" class="hover:text-gray-200 duration-500">Page's +</a></li>
-                <li><a href="#" class="hover:text-gray-200 duration-500">Blogs +</a></li>
-                <li><a href="#" class="hover:text-gray-200 duration-500">Contact Us</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="lg:hidden md:hidden menu pl-28">
-            <i class="fa-solid fa-bars text-xl text-white"></i>
-        </div>
-        <div class="hidden md:flex flex  pl-10">
-            <input class="rounded-lg border lg:w-48 md:w-20  w-20 lg:py-2  bg-gray-200 " type="text"
-                placeholder=" search">
-            <i class="fa fa-search lg:text-xl lg:mx-4 md:text-xl pl-3 pt-1" aria-hidden="true"></i>
-        </div>
-    </nav>
-</header>
+    <section class="bg-green-600">
+        <header class=" bg-green-600 text-black font-medium px-2">
+            <nav class="container flex items-center justify-between lg:gap-20">
+                <img class="w-32" src="images/Logo.png" alt="" srcset="">
+                <div
+                    class="dropdown-menu absolute -top-full max-lg:bg-green-700 w-full left-0 flex flex-col items-center justify-center lg:static lg:flex-row lg:justify-between">
+                    <ul class="lg:flex lg:gap-8 py-4">
+                        <li class="hover:text-white duration-500">Home</li>
+                        <li class="hover:text-white duration-500">About</li>
+                        <li class="hover:text-white duration-500">Services</li>
+                        <li class="hover:text-white duration-500">Blog's</li>
+                        <li class="hover:text-white duration-500">Page's</li>
+                        <li class="hover:text-white duration-500">Contact us</li>
+                    </ul>
+                    <div class="py-4 ">
+                        <button
+                            class=" border bg-green-600 border-white px-2 py-1 rounded-lg text-white hover:bg-green-700 duration-500">sign
+                            up</button>
+                        <button
+                            class="border bg-green-600 border-white px-2 py-1 rounded-lg text-white hover:bg-green-700 duration-500">shop
+                            now</button>
+                    </div>
+                </div>
+                <div class="toggle-button lg:hidden">
+                    <i class="fa-solid fa-bars text-xl text-white"></i>
+                </div>
+            </nav>
+        </header>
+    </section>
     <section class="party">
         <div class="container lg:flex md:flex lg:items-center md:items-center items-center ">
             <div class="w-1/2   flex flex-col lg:gap-8 md:gap-5 justify-center  ">
@@ -65,46 +66,48 @@
                     ipsum, dolor sit amet consectetur
                     adipisicing elit. Itaque ullam eaque,
                     quo, porro dolnemo deserunt ducimus modi. Voluptatibus,?</p>
-                    
                 <div class="py-4">
-                    <button class="Techmax font-sarif lg:px-10 lg:py-2 px-5  lg:text-xl text-lg  text-white bg-green-600 hover:bg-white hover:text-black">Start
+                    <button
+                        class="Techmax font-sarif lg:px-10 lg:py-2 md:py-3 px-5 py-1 lg:text-xl text-lg border border-green-600  text-white bg-green-600 hover:bg-white hover:text-black duration-700">Start
                         Now</button>
-                    </div>
-                <div class="lg:hidden md:hidden w-[200%] px-4">
+                </div>
+                <div class="lg:hidden md:hidden w-[200%] px-4 py-6">
                     <img src="15.png" alt="">
                 </div>
             </div>
-            <div class="w-1/2 hidden lg:Block md:block">
-                <img class="" src="15.png" alt="" width="100%">
+            <div class=" w-1/2 hidden lg:Block md:block">
+                <img class=" " src="15.png" alt="" width="100%"data-tilt data-tilt-glare>
             </div>
         </div>
     </section>
+   
     <section class=" lg:mt-16 ">
         <div class="flex lg:mx-32 px-2 md:mx-20 font-semibold lg:text-3xl md:text-3xl text-2xl text-[#009933] mt-20">
-            <span class=" text-green-600 text-">.</span>
-            <h1 class=" ">Services</h1>
-            <span class=" tex">.</span>
+            <h1 class="font-semibold text-xl">Services</h1>
         </div>
-        <h1 class="lg:mx-32 md:mx-auto font-semibold lg:text-6xl md:text-5xl px-2 text-3xl text-[#009933] mt-2 "
-            data-aos="fade-up">Services We Offer</h1>
-        <div class="lg:flex md:flex">
-            <p class="lg:mx-32 md:mx-auto lg:font-bold md:font-semibold lg:text-xl md:text-xl text-xl text-gray-700 lg:mt-8 md:mt-6 mt-2 px-2  lg:w-[40%] md:w-[40%] w-[90%]"
-                data-aos="fade-up">Lorem ipsum dolor sit
-                amet consectetur
-                adipisicing elit. Nobis deserunt, quod nisi ?</p>
-            <div class="lg:ml-[6%] md:ml-[13%] px-2 mt-4">
+        <div class="lg:flex">
+            <h1 class="md:mx-3 lg:mx-16 font-semibold lg:text-5xl md:text-4xl md:pl-16 px-2 text-3xl text-[#009933] mt-2 "
+                data-aos="fade-up">Services We Offer</h1>
+            <div class="lg:pl-60 md:pl-20 mt-4">
                 <button
-                    class="Techmax  lg:px-10 md:px-16 px-3 border border-green-700 text-white bg-[#009933]  lg:py-2 md:py-4 py-2 lg:font-bold lg:text-2xl text-lg hover:bg-white hover:text-[#009933] duration-500"
+                    class="Techmax lg:px-10 md:px-10 px-3 border border-green-700 text-white bg-green-600  lg:py-2 md:py-4 py-2 lg:font-semibold lg:text-2xl text-lg hover:bg-white hover:text-[#009933]"
                     data-aos="fade-up">See All Services<i
                         class=" fa-solid fa-arrow-right hover:text-white  ml-2 "></i></button>
             </div>
         </div>
+        <div class="lg:flex md:flex">
+            <p class="lg:mx-32 md:mx-16 md:font-semibold lg:text-lg md:text-xl text-sm text-gray-700 lg:mt-8 md:mt-6 mt-2 px-2  lg:w-[40%] md:w-[40%] w-[90%]"
+                data-aos="fade-up">Lorem ipsum dolor sit
+                amet consectetur
+                adipisicing elit. Nobis deserunt, quod nisi ?</p>
+
+        </div>
         <div
-            class=" mx-auto grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:space-x-1 md:space-x-2 p-4 lg:px-20 md:px-10 lg:w-[100%] md:w-[90%]   ">
-            <div class="pages border border-green-700 p-9 w-[94%] lg:mt-20 md:mt-16 mt-10 text-green-600 h-[90%]  hover:bg-[#009933] hover:text-white rounded-xl "
+            class=" mx-auto grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:space-x-1 md:space-x-2 p-4 lg:px-20 md:px-10 lg:w-[99%]  md:w-[90%]   ">
+            <div class="pages border border-green-700 p-9 w-[94%] lg:mt-20 md:mt-16 mt-10 text-green-600 h-[90%] lg:h-[80%] hover:bg-[#009933] hover:text-white rounded-xl "
                 data-aos="fade-up">
                 <i class="fa-solid fa-code lg:text-5xl text-3xl "></i>
-                <h1 class=" lg:text-3xl md:text-3xl text-base  font-semibold   mt-6">Web Development</h1>
+                <h1 class=" lg:text-3xl md:text-2xl text-base  font-semibold   mt-6">Web Development</h1>
                 <p class="text-sm lg:text-lg mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. A accu hbshx hvswhgv hsvhgv.</p>
                 <div class="">
@@ -113,10 +116,10 @@
                 </div>
             </div>
             <div>
-                <div class="  pages border border-green-700 p-10 w-[94%] lg:mt-20 md:mt-16 mt-4 text-green-600 h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
+                <div class="  pages border border-green-700 p-10 w-[94%] lg:mt-20 md:mt-16 mt-4 text-green-600 h-[90%] lg:h-[80%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
                     data-aos="fade-up">
                     <i class="fa-sharp fa-solid fa-globe font-bold lg:text-5xl md:text-3xl text-3xl"></i>
-                    <h1 class="lg:text-3xl md:text-3xl text-lg font-semibold  mt-6">Digital Marketing</h1>
+                    <h1 class="lg:text-3xl md:text-2xl text-lg font-semibold  mt-6">Digital Marketing</h1>
                     <p class="text-sm lg:text-lg  mt-2">Lorem ipsum dolor sit amet consectetur
                         adipisicing
                         elit. A accu hbshx hvswhgv hsvhgv.</p>
@@ -126,41 +129,41 @@
                     </div>
                 </div>
             </div>
-            <div class="pages border border-green-700 p-10 w-[94%] lg:mt-20 md:mt-16 mt-2 text-green-600 h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
+            <div class="pages border border-green-700 p-10 w-[94%] lg:mt-20 md:mt-16 mt-2 text-green-600 h-[90%] lg:h-[80%] hover:bg-green-600 hover:text-white  duration-500 rounded-xl"
                 data-aos="fade-up">
                 <i class="fa-brands fa-product-hunt font-bold lg:text-5xl md:text-4xl text-3xl"></i>
-                <h1 class="lg:text-3xl md:text-3xl text-lg font-semibold  mt-6">SaaS Product</h1>
-                <p class="text-sm  lg:text-lg font-semibold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                <h1 class="lg:text-3xl md:text-2xl text-lg font-semibold  mt-6">SaaS Product</h1>
+                <p class="text-sm  lg:text-lg font-semibold mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. A accu hbshx hvswhgv hsvhgv.</p>
                 <div class="">
                     <button class=" mt-4 font-bold text-sm lg:text-lg">Read More<i
                             class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
-            <div class="pages border border-green-700 lg:mt-28 md:mt-20 mt-4 p-8 w-[94%] text-green-600 lg:h-[80%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
+            <div class="pages border border-green-700 lg:mt-3 md:mt-16 mt-4 p-8 w-[94%] text-green-600 lg:h-[90%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
                 data-aos="fade-up">
                 <i class="fa-solid fa-gear font-bold lg:text-5xl md-text-4xl text-2xl"></i>
-                <h1 class="lg:text-3xl text-lg md:text-3xl  font-semibold  mt-6">Apps Development</h1>
+                <h1 class="lg:text-3xl text-lg md:text-2xl  font-semibold  mt-6">Apps Development</h1>
 
-                <p class="text-sm lg:text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                <p class="text-sm lg:text-lg mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. A accu hbshx hvswhgv hsvhgv.</p>
                 <div class="">
                     <button class="mt-4 font-bold text-sm lg:text-lg">Read More<i
                             class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
-            <div class="pages border border-green-700 lg:mt-28 md:mt-16 mt-2 p-10 w-[94%] text-green-600  lg:h-[80%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
+            <div class="pages border border-green-700 lg:mt-3 md:mt-16 mt-2 p-10 w-[94%] text-green-600  lg:h-[90%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
                 data-aos="fade-up">
                 <i class="fa-solid fa-magnifying-glass font-bold lg:text-5xl md:text-4xl text-2xl"></i>
-                <h1 class="lg:text-3xl text-lg  font-semibold mt-6">Seo Services</h1>
-                <p class="text-sm lg:text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                <h1 class="lg:text-3xl text-lg md:text-2xl font-semibold mt-6">Seo Services</h1>
+                <p class="text-sm lg:text-lg mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. A accu hbshx hvswhgv hsvhgv.</p>
                 <div class="">
                     <button class=" mt-4 font-bold text-sm lg:text-lg">Read More<i
                             class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
-            <div class="pages border border-green-700 lg:mt-28 md:mt-16 mt-2 p-10 w-[94%] text-green-600  lg:h-[80%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
+            <div class="pages border border-green-700 lg:mt-3 md:mt-16 mt-2 p-10 w-[94%] text-green-600  lg:h-[90%] h-[90%] hover:bg-[#009933] hover:text-white  duration-500 rounded-xl"
                 data-aos="fade-up">
                 <i class="fa-solid fa-rotate-right font-bold lg:text-5xl md:text-4xl text-2xl"></i>
                 <h1 class="lg:text-3xl md:text-3xl text-lg font-semibold  mt-6">Data Analysis</h1>
@@ -173,93 +176,84 @@
             </div>
         </div>
     </section>
-    <section class=" p-1 mt-10">
-        <div class="flex lg:mx-32 md:mx-auto font-semibold text-3xl text-[#009933] px-2 lg:mt-32 md:mt-28 mt-4 "
-            data-aos="fade-up">
-            <span class=" text-green-600 ">.</span>
-            <h1 class=" text-xl">About Us</h1>
-            <span class=" ">.</span>
-        </div>
-        <h1 class="lg:mx-32 md:mx-auto font-semibold lg:text-6xl md:text-5xl text-4xl px-2 lg:w-[45%] md:w-[45%] w-[100%] "
-            data-aos="fade-up">Trusted By Worldwide Clints Since
-            <span class="underline font-bold text-green-600" data-aos="fade-up">1990 .</span>
-        </h1>
-        <div class="flex" data-aos="fade-up">
-            <p
-                class="lg:mx-32 md:mx-auto lg:font-semibold md:font-semibold lg:text-lg text-sm text-gray-700 lg:mt-10 md:mt-6 mt-3  lg:w-[40%] md:w-[40%] px-2 w-[100%]  ">
-                Lorem ipsum dolor sit amet
-                consectetur
-                adipisicing dyewv gwsvtxf wgstf gsfxtc fsxwaxd hwhqjg gswxtf gwvstqf gwghqh fwtf elit. Nobis
-                deserunt,
-                quod ?</p>
-        </div>
-        <div class="lg:flex lg:flex-col-2 lg:px-10 md:flex md:flex-col-2 lg:items-center md:items-center    "
-            data-aos="fade-up">
-            <div class=" py-10 lg:w-[90%]">
-                <h1 class="lg:text-2xl text-lg font-semibold  text-[#009933] ">
-                    <i class="fa-regular lg:mt-3 text-green-600 fa-star border bg-green-200 lg:text-3xl md:text-3xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
-                    Firest on field
-                </h1>
-                <p class="text-gray-800  md:px-20 pl-16 lg:font-semibold  text-sm" data-aos="fade-up">Lorem
-                    ipsum dolor, sit elit.
-                    Laudantium odit voluptate sit repellendus laborio</p>
-                    <h1 class="lg:text-2xl text-lg font-semibold  text-[#009933] ">
-                        <i
-                            class="fa-regular lg:mt-3 text-green-600 fa-child border bg-green-200 lg:text-3xl md:text-3xl text-2xl px-6 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
-                        24/7 Support
-                    </h1>
-                    <p class="text-gray-800 lg:px-20 md:px-20 pl-16 lg:font-semibold  text-sm" data-aos="fade-up">Lorem
-                        ipsum dolor, sit elit.
-                        Laudantium odit voluptate sit repellendus laborio</p>
+    <!--About us starts from here.... -->
+    <section class="container py-16 flex flex-col gap-3 md:gap-5">
+        <h1 class="text-xl font-semibold text-green-600">About Us</h1>
+        <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold md:w-1/2">Trusted By Worldwide Clints
+            Since <span class="text-green-600 underline">1990 .</span></h1>
+        <p class="text-lg font-semibold md:text-base md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing dyewv
+            gwsvtxf wgstf gsfxtc fsxwaxd hwhqjg gswxtf gwvstqf gwghqh fwtf elit. Nobis deserunt, quod ?</p>
+        <div class="flex mt-5 gap-10 flex-col md:flex-row">
+            <div class="md:w-1/2 grid gap-4 grid-cols-1 sm:grid-cols-2">
+                <div class="flex gap-2 ">
+                    <div class=" rounded-xl"> <i
+                            class="fa-regular  text-green-600 fa-search border bg-green-200 lg:text-3xl md:text-2xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold">Firest on field</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit elit. Laudantium odit voluptate sit repellendus
+                            laborio</p>
+                    </div>
                 </div>
-            <div class=" lg:py-10 md:py-10 lg:w-[90%]  md:w-[80%]">
-                <h1 class="lg:text-2xl text-lg font-semibold  text-[#009933] ">
-                    <i
-                        class="fa-regular lg:mt-3 text-green-600 fa-rotate-right border bg-green-200 lg:text-3xl md:text-3xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
-                    Worldwide Services
-                </h1>
-                <p class="text-gray-800 lg:px-20 md:px-20 pl-16 lg:font-semibold  text-sm" data-aos="fade-up">Lorem
-                    ipsum dolor, sit elit.
-                    Laudantium odit voluptate sit repellendus laborio</p>
-                    <h1 class="lg:text-2xl text-lg font-semibold  text-[#009933] ">
-                        <i
-                            class="fa-regular lg:mt-3 text-green-600 fa-star border bg-green-200 lg:text-3xl md:text-3xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
-                        Easy to Reach
-                    </h1>
-                    <p class="text-gray-800 lg:px-20 md:px-20 pl-16 lg:font-semibold  text-sm" data-aos="fade-up">Lorem
-                        ipsum dolor, sit elit.
-                        Laudantium odit voluptate sit repellendus laborio</p>
-    
+                <div class="flex gap-2 ">
+                    <div class=" rounded-xl"> <i
+                            class="fa-regular  text-green-600 fa-star border bg-green-200 lg:text-3xl md:text-2xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold">24/7 Support</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit elit. Laudantium odit voluptate sit repellendus
+                            laborio</p>
+                    </div>
                 </div>
-            <div class="lg:pb-20">
-                <img class="py-10" src="3.png" alt="" width="90% "">
+                <div class="flex gap-2 ">
+                    <div class=" rounded-xl"><i
+                            class="fa-regular  text-green-600 fa-gear border bg-green-200 lg:text-3xl md:text-2xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold">World Services</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit elit. Laudantium odit voluptate sit repellendus
+                            laborio</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 ">
+                    <div class=" rounded-xl"> <i
+                            class="fa-regular  text-green-600 fa-rotate-right border bg-green-200 lg:text-3xl md:text-2xl text-2xl px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white duration-500 font-bold"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold">Easy to Reach</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit elit. Laudantium odit voluptate sit repellendus
+                            laborio</p>
+                    </div>
+                </div>
             </div>
+            <div class="md:w-1/2 md:-mt-16">
+                <img src="/3.png" alt=""data-tilt data-tilt-glare></div>
         </div>
-        <div class=" lg:px-20 md:px-20 px-2">
-                <button
-                    class="Techmax  lg:px-12 md:px-12 px-6 border border-green-700 text-white bg-[#009933]  lg:py-4 md:py-4 py-2 lg:font-bold text-lg hover:bg-white hover:text-[#009933] duration-500"
-                    data-aos="fade-up">Get
-                    In Touch</button>
-            </div>
     </section>
+    <div class="lg:pl-40 md:pl-28 px-4">
+        <button
+            class="Techmax border px-10 border-green-700 text-white bg-green-600 py-2 lg:font-bold text-lg hover:bg-white hover:text-[#009933] duration-500"
+            data-aos="fade-up">Get
+            In Touch</button>
+    </div>
     <section class=" p-1 ">
-        <div class="lg:flex md:flex  md:mt-16 mt-4">
+        <div class="lg:flex md:flex md:items-center  mt-4">
             <div class="px-4  lg:px-20 lg:h-[90%] lg:w-[90%] md:px-20  lg:pt-96 mt-10">
-                <img class="  rounded-lg" src="11.png" alt="" width="100%" md:width="90"">
+                <img class="  rounded-lg" src="11.png" alt="" width="100%" md:width="95"data-tilt data-tilt-glare>
             </div>
             <div>
-                <div class=" flex  px-2 md:mx-auto font-bold text-xl text-[#009933] mt-10" data-aos="fade-up">
+                <div class=" flex px-2 md:mx-auto font-bold text-xl text-[#009933] mt-10" data-aos="fade-up">
                 <span class=" text-green-600 text-">.</span>
                 <h1 class=" ">WHY CHOOSE US</h1>
                 <span class=" ">.</span>
             </div>
-            <h1 class=" md:mx-auto font-semibold lg:text-5xl md:text-5xl text-2xl px-2    mt-4"
-                data-aos="fade-up">Why Our Customers Choose
+            <h1 class=" md:mx-auto font-semibold lg:text-5xl md:text-5xl text-2xl px-2    mt-4" data-aos="fade-up">Why
+                Our Customers Choose
                 <span class="text-green-600 font-bold underline">Working</span> With Us </span>
             </h1>
             <div class="">
-                <p class="text-sm lg:text-lg text-gray-700 lg:py-4 lg:pl-4 px-3"
-                    data-aos="fade-up">Lorem ipsum dolor sit
+                <p class="text-sm lg:text-lg text-gray-700 lg:py-4 lg:pl-4 px-3" data-aos="fade-up">Lorem ipsum dolor
+                    sit
                     amet
                     consectetur
                     adipisicing dyewv gwsvtxf wgstf gsfxtc fsxwaxd hwhqjg gswxtf gwvstqf gwghqh fwtf elit. Nobis
@@ -290,18 +284,20 @@
                         <h1 class="text-green-600 lg:text-6xl md:text-4xl text-3xl px-2  font-bold">03.</h1>
                         <h1 class="lg:text-3xl md:text-2xl px-2 text-xl font-semibold ">Powerful Strategies</h1>
                     </div>
-                    <p class="lg:pl-[20%]  px-2 lg:text-lg text-sm text-gray-800" data-aos="fade-up">Lorem ipsum sit amet
+                    <p class="lg:pl-[20%]  px-2 lg:text-lg text-sm text-gray-800" data-aos="fade-up">Lorem ipsum sit
+                        amet
                         consecg elit. Error cum ducimus
                         odio ut! Soluta magnam aliquid e</p>
                 </div><button
-                class="Techmax  lg:ml-32 mt-20  lg:px-12 md:px-16 px-6 border border-green-700 text-white bg-[#009933]  lg:py-4 md:py-4 py-2 text-lg hover:bg-white hover:text-[#009933] duration-500"
-                data-aos="fade-up">Get
-                In Touch</button>
-        </div>
+                    class="Techmax  lg:ml-32 mt-8  lg:px-12 md:px-16 px-6 border border-green-700 text-white bg-green-600  lg:py-4 md:py-4 py-2 text-lg hover:bg-white hover:text-[#009933] duration-500"
+                    data-aos="fade-up">Get
+                    In Touch</button>
+            </div>
         </div>
     </section>
-    <section class="lg:bg-green-200 text-center py-32 mt-3">
-        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-8 lg:grid-cols-4">
+    <section class="lg:bg-green-200 text-center py-10 mt-10">
+        <div
+            class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 justify-center items-center gap-8 lg:grid-cols-4">
             <div class="hello bg-gray-600  rounded-lg lg:w-59 lg:h-50 w-[100%] h-[100%] py-6 ">
                 <i class="fa-solid fa-laptop font-bold text-white text-4xl mt-2"></i>
                 <h1 class="text-6xl mt-4 font-bold text-white mt-2">750+</h1>
@@ -324,24 +320,25 @@
             </div>
         </div>
     </section>
-    <section class=" p-1 lg:mt-16  ">
-        <div class="flex lg:mx-32 md:mx-auto px-2 font-semibold lg:text-3xl md-text-2xl text-lg text-[#009933] lg:mt-48 md:mt-32 mt-16"
+    <section class="container lg:mt-16  ">
+        <div class="flex md:mx-auto px-2 font-semibold lg:text-3xl md-text-2xl text-lg text-[#009933] lg:mt-48 md:mt-32 mt-16"
             data-aos="fade-up">
             <span class=" text-green-600 ">.</span>
             <h1 class=" ">Portfolio</h1>
             <span class=" ">.</span>
         </div>
         <div class="lg:flex md:flex">
-            <h1 class="lg:mx-32 md:mx-auto px-2 font-semibold lg:text-6xl md:text-5xl text-2xl  text-[#009933] mt-2"
-                data-aos="fade-up">Awesome Portfolio</h1>
-            <div class="px-2 lg:pl-10">
+            <h1 class="  px-2 font-semibold lg:text-6xl md:text-5xl text-2xl  text-[#009933] mt-2" data-aos="fade-up">
+                Awesome Portfolio</h1>
+            <div class="px-2 lg:pl-32">
                 <button
-                    class="Techmax  lg:px-16  md:px-16 px-6 border border-green-700 text-white bg-[#009933] lg:py-4 py-1 mt-2 lg:font-semibold text-base hover:bg-white hover:text-[#009933] duration-500 "
-                    data-aos="fade-up">See More <i class=" fa-solid fa-arrow-right hover:text-white  text-xl   ml-2 "></i></button>
+                    class="Techmax  md:px-16 md:py-3 px-6 border border-green-700 text-white bg-green-600 lg:py-4 py-1 mt-2 lg:font-semibold text-base hover:bg-white hover:text-[#009933] duration-500 "
+                    data-aos="fade-up">See More <i
+                        class=" fa-solid fa-arrow-right hover:text-white  text-xl   ml-2 "></i></button>
             </div>
         </div>
         <div class="mt-8 " data-aos="fade-up">
-            <ul class=" lg:flex md:flex grid gap-5 px-2  lg:mx-48 lg:text-xl font-semibold ">
+            <ul class=" lg:flex md:flex grid gap-5 px-2  lg:text-xl font-semibold ">
                 <i class="fa-solid fa-circle text-sm mt-2 ml-1 text-green-600"></i>
                 <li><a href="#" class="text-[#009933] duration-500">All +</a></li>
                 <li><a href="#" class="hover:text-[#009933] duration-500">Mobile App</a></li>
@@ -360,132 +357,149 @@
             <img class=" lg:mt-20 rounded-lg" src="25.jpg" alt="">
         </div>
     </section>
-    <section class="py-32 bg-green-500">
-        <div class="text-center">
+    <section class=" py-20 lg:py-28 bg-green-500 ">
+        <div class="container text-center">
             <h1 class=" text-3xl font-semibold text-green-200 " data-aos="fade-up">Trusted By Our 500
                 Clients Around The World
             </h1>
-            <div class="slide mt-20">
+            <div class="slide mt-20 ">
                 <div class=" p-4">
-                    <img class="" src="2-white (2).png" alt="">
+                    <img class="rounded-lg" src="2-white (2).png" alt="">
                 </div>
                 <div class="p-4">
-                    <img class="" src="2-white (2).png" alt="">
+                    <img class="rounded-lg" src="3-white.png" alt="">
                 </div>
                 <div class="p-4">
-                    <img class="" src="2-white (2).png" alt="">
+                    <img class="rounded-lg" src="4-white.png" alt="">
                 </div>
                 <div class="p-4">
-                    <img class="" src="2-white (2).png" alt="">
+                    <img class="rounded-lg" src="5-white.png" alt="">
                 </div>
                 <div class="p-4">
-                    <img class="" src="2-white (2).png" alt="">
+                    <img class="rounded-lg" src="7-white.png" alt="">
+                </div>
+
+                <div class="p-4">
+                    <img class="rounded-lg" src="2-white (2).png" alt="">
+                </div>
+
+                <div class="p-4">
+                    <img class="rounded-lg" src="2-white.png" alt="">
+                </div>
+
+                <div class="p-4">
+                    <img class="rounded-lg" src="5-white.png" alt="">
+                </div>
+
+                <div class="p-4">
+                    <img class="rounded-lg" src="3-white.png" alt="">
+                </div>
+
+                <div class="p-4">
+                    <img class="rounded-lg" src="2-white (2).png" alt="">
                 </div>
             </div>
-          
         </div>
         </div>
     </section>
-    <section class="">
-        <div class="flex lg:mx-32 md:mx-auto px-2 font-semibold lg:text-3xl md:text-2xl text-lg text-[#009933] mt-10" data-aos="fade-up">
+    <section class="container">
+        <div class="flex  px-2 font-semibold lg:text-3xl md:text-2xl text-lg text-[#009933] mt-10" data-aos="fade-up">
             <span class=" text-green-600 ">.</span>
             <h1 class=" ">Pricing Plan</h1>
             <span class=" tex">.</span>
         </div>
-        <h1 class=" font-semibold lg:text-6xl md:text-5xl text-2xl  text-[#009933] lg:px-28 md:px-20 px-2 "
-            data-aos="fade-up">Afordable Pricing Paln
-        </h1>
-        <div class="lg:flex md:flex px-2">
-            <p class=" lg:font-semibold text-sm lg:text-lg lg:w-[60%] lg:pl-28 lg:py-4 text-gray-700 px-2 "
-                data-aos="fade-up">Lorem ipsum dolor
-                sit amet consectetur
-                adipisicing dyewv gwsvtxf wgstf gsfxtc fsxwaxd hwhqjg gswxtf gwvstqf gwghqh fwtf elit. Nobis
-                deserunt,
-                quod nisi ?</p>
-            <div class="lg:pl-20">
+        <div class="flex">
+            <h1 class=" font-semibold lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-[#009933] px-2 "
+                data-aos="fade-up">Afordable Pricing Paln
+            </h1>
+            <div class="lg:pl-48 md:pl-20">
                 <button
-                    class="Techmax    lg:px-16 md:px-10 mt-2 px-6 border border-green-700 text-white bg-[#009933]  lg:py-4 md:py-4 py-1  lg:font-semibold text-lg hover:bg-white hover:text-[#009933] duration-500 "
+                    class="Techmax lg:px-16 md:px-10 mt-2 px-6 border border-green-700 text-white bg-green-600  lg:py-3 md:py-3 py-1  lg:font-semibold text-lg hover:bg-white hover:text-[#009933] duration-500 "
                     data-aos="fade-up">See
                     All Plans <i class=" fa-solid fa-arrow-right hover:text-white  text-xl   ml-2 "></i></button>
             </div>
         </div>
+        <div class="lg:flex md:flex px-2">
+            <p class=" lg:font-semibold text-sm lg:text-lg md:w-1/2 lg:py-4 text-gray-700 px-2 " data-aos="fade-up">
+                Lorem ipsum dolor
+                sit amet consectetur
+                adipisicing dyewv gwsvtxf wgstf gsfxtc fsxwaxd hwhqjg gswxtf gwvstqf gwghqh fwtf elit. Nobis
+                deserunt,
+                quod nisi ?</p>
+        </div>
         </div>
     </section>
-    <section class="  w-[100%] py-10 px-4">
-        <div class=" grid grid-cols-1 md:grid-cols-4  text-center gap-10  ">
-            <div class="hello  border border-green-700 rounded-lg w-[100%]  p-10  " data-aos="fade-up">
-                <i class="fa-solid fa-gear font-bold text-green-600 text-5xl mt-8"></i>
-                <h1 class="text-5xl font-bold  mt-6">Free Plans</h1>
-                <h1 class="text-7xl font-bold  mt-6"><span class="text-xl ">$</span> 0 0</h1>
-                <p class="text-xl mt-10 font-bold ">Pree Project</p>
-                <p class="text-gray-800 font-semibold text-xl mt-8"> 250 nsja sjn sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> 200 nsja sjn sbxjb </p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sjn sbxjb sbqa</p>
+    <section class=" w-[100%] py-10 px-8">
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2  text-center gap-3  ">
+            <div class="hello  border border-green-700 rounded-lg w-[100%] h-[100%] p-4  " data-aos="fade-up">
+                <i class="fa-solid fa-gear font-bold text-green-600 text-5xl py-2"></i>
+                <h1 class="lg:text-4xl text-4xl font-bold  mt-6">Free Plans</h1>
+                <h1 class="text-5xl font-bold  mt-6"><span class="text-xl ">$</span> 0 0</h1>
+                <p class="text-xl mt-10 font-bold">Pree Project</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-4"> 250 nsja sjn sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> 200 nsja sjn sbxjb </p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sjn sbxjb sbqa</p>
                 <div>
                     <button
-                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 py-1 lg:mt-10 mt-4  lg:font-semibold lg:text-2xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
-                        Plans 
+                        class="lg:px-4 px-6 border border-green-700 text-white bg-[#009933] rounded-sm lg:py-2 py-1 lg:mt-4 mt-4  lg:font-semibold lg:text-xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
+                        Plans
                         <i class=" fa-solid fa-arrow-right hover:text-white  text-lg    "></i></button>
-                
-                    </div>
+                </div>
             </div>
-            <div class="hello  border border-green-700  rounded-lg p-10 w-[100%]  " data-aos="fade-up">
-                <i class="fa-solid fa-child font-bold text-green-600 text-5xl mt-8"></i>
-                <h1 class="text-5xl font-bold  mt-6">Standerd Plans</h1>
-                <h1 class="text-7xl font-bold  mt-6"><span class="text-xl ">$</span> 85</h1>
+            <div class="hello  border border-green-700  rounded-lg  w-[100%] h-[100%] p-4 " data-aos="fade-up">
+                <i class="fa-solid fa-child font-bold text-green-600 text-5xl py-2"></i>
+                <h1 class="lg:text-4xl text-4xl font-bold  mt-6 whitespace-nowrap">Standerd Plans</h1>
+                <h1 class="text-5xl font-bold  mt-6"><span class="text-xl ">$</span> 85</h1>
                 <p class="text-xl mt-10 font-bold ">Pree Project</p>
-                <p class="text-gray-800 font-semibold text-xl mt-8"> 250 nsja sjn sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> 200 nsja sjn sbxjb </p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sjn sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-4"> 250 nsja sjn sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> 200 nsja sjn sbxjb </p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sjn sbxjb sbqa</p>
                 <div>
                     <button
-                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 py-1 lg:mt-10 mt-4  lg:font-semibold lg:text-2xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
-                        Plans 
+                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933] rounded-sm lg:py-2 py-1 lg:mt-4 mt-4  lg:font-semibold lg:text-xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
+                        Plans
                         <i class=" fa-solid fa-arrow-right hover:text-white  text-lg    "></i></button>
-                
-                    </div>
+                </div>
             </div>
-            <div class="hello  border border-green-700 bg-green-600 rounded-lg p-10 w-[100%] " data-aos="fade-up">
-                <i class="fa-solid fa-box font-bold text-white text-5xl mt-8"></i>
-                <h1 class="text-5xl font-bold text-white  mt-6">pro Plans</h1>
-                <h1 class="text-7xl font-bold text-white  mt-6"><span class="text-xl ">$</span> 150</h1>
+            <div class="hello  border border-green-700 bg-green-600 rounded-lg  w-[100%] h-[100%] p-4 " data-aos="fade-up">
+                <i class="fa-solid fa-box font-bold text-white text-5xl py-2"></i>
+                <h1 class="lg:text-4xl text-4xl font-bold text-white  mt-6">pro Plans</h1>
+                <h1 class="text-5xl font-bold text-white  mt-6"><span class="text-xl ">$</span> 150</h1>
                 <p class="text-xl text-white mt-10 font-bold ">Pree Project</p>
-                <p class="text-white font-semibold text-xl mt-8"> 250 nsja sjn sbxjb sbqa</p>
-                <p class="text-white font-semibold text-xl mt-4"> 200 nsja sjn sbxjb </p>
-                <p class="text-white font-semibold text-xl mt-4"> nsja sbxjb sbqa</p>
-                <p class="text-white font-semibold text-xl mt-4"> nsja sjn sbxjb sbqa</p>
+                <p class="text-white font-semibold lg:text-xl text-lg mt-4"> 250 nsja sjn sbxjb sbqa</p>
+                <p class="text-white font-semibold lg:text-xl text-lg mt-2"> 200 nsja sjn sbxjb </p>
+                <p class="text-white font-semibold lg:text-xl text-lg mt-2"> nsja sbxjb sbqa</p>
+                <p class="text-white font-semibold lg:text-xl text-lg mt-2"> nsja sjn sbxjb sbqa</p>
                 <div>
                     <button
-                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 py-1 lg:mt-10 mt-4  lg:font-semibold lg:text-2xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
-                        Plans 
+                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 rounded-sm py-1 lg:mt-4 mt-4  lg:font-semibold lg:text-xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
+                        Plans
                         <i class=" fa-solid fa-arrow-right hover:text-white  text-lg    "></i></button>
-                
-                    </div>
+                </div>
             </div>
-            <div class="hello  border border-green-700 rounded-lg  p-10 w-[100%] " data-aos="fade-up">
-                <i class="fa-solid fa-globe font-bold text-green-600 text-5xl mt-8"></i>
-                <h1 class="text-4xl font-bold  mt-6">Ultimate Plans</h1>
-                <h1 class="text-7xl font-bold  mt-6"><span class="text-xl ">$</span> 210</h1>
+            <div class="hello  border border-green-700 rounded-lg w-[100%] h-[100%] p-4" data-aos="fade-up">
+                <i class="fa-solid fa-globe font-bold text-green-600 text-5xl py-2"></i>
+                <h1 class="lg:text-4xl text-4xl font-bold  mt-6 whitespace-nowrap">Ultimate Plans</h1>
+                <h1 class="text-5xl font-bold  mt-6"><span class="text-xl ">$</span> 210</h1>
                 <p class="text-xl mt-10 font-bold ">Pree Project</p>
-                <p class="text-gray-800 font-semibold text-xl mt-8"> 250 nsja sjn sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> 200 nsja sjn sbxjb </p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sbxjb sbqa</p>
-                <p class="text-gray-800 font-semibold text-xl mt-4"> nsja sjn sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg  mt-4"> 250 nsja sjn sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> 200 nsja sjn sbxjb </p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sbxjb sbqa</p>
+                <p class="text-gray-800 font-semibold lg:text-xl text-lg mt-2"> nsja sjn sbxjb sbqa</p>
                 <div>
                     <button
-                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 py-1 lg:mt-10 mt-4  lg:font-semibold lg:text-2xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
-                        Plans 
+                        class="  lg:px-4 px-6 border border-green-700 text-white bg-[#009933]  lg:py-2 py-1 lg:mt-4 mt-4 rounded-sm  lg:font-semibold lg:text-xl text-sm hover:bg-white hover:text-[#009933] duration-500 ">Select
+                        Plans
                         <i class=" fa-solid fa-arrow-right hover:text-white  text-lg    "></i></button>
-                
-                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="bg-gray-400 py-20 ">
-        <div class="container  ">
-            <div class="slider ">
+    <section class="bg-green-600 py-20 mt-20">
+        <div class="container  flex flex-col items-center justify-center ">
+            <div class="slider w-[70%]">
                 <div class="">
                     <img class="rounded-[50%] w-28 mx-auto" src="images/LogoTM round.jpg" alt="">
                     <p class="lg:text-xl text-sm text-white text-center w-3/4 mx-auto py-10">Lorem ipsum dolor sit amet
@@ -493,33 +507,29 @@
                         consectetur
                         adipisicing elit. Animi, deserunt?</p>
                 </div>
-
                 <div class="">
-                    <img class="rounded-[50%] w-28 mx-auto" src="images/LogoTM round.jpg" alt="">
+                    <img class="rounded-[50%] w-28 mx-auto" src="images/Logo.png" alt="">
                     <p class="lg:text-xl text-sm text-white text-center w-3/4 mx-auto py-10">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Itaque dolore exercitationem nuri.Lorem ipsum dolor sit amet
                         consectetur
                         adipisicing elit. Animi, deserunt?</p>
                 </div>
-
                 <div class="">
-                    <img class="rounded-[50%] w-28 mx-auto" src="images/LogoTM round.jpg" alt="">
+                    <img class="rounded-[50%] w-28 mx-auto" src="2-white (2).png" alt="">
                     <p class="lg:text-xl text-sm text-white text-center w-3/4 mx-auto py-10">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Itaque dolore exercitationem nuri.Lorem ipsum dolor sit amet
                         consectetur
                         adipisicing elit. Animi, deserunt?</p>
                 </div>
-
                 <div class="">
-                    <img class="rounded-[50%] w-28 mx-auto" src="images/LogoTM round.jpg" alt="">
+                    <img class="rounded-[50%] w-28 mx-auto" src="4-white.png" alt="">
                     <p class="lg:text-xl text-sm text-white text-center w-3/4 mx-auto py-10">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Itaque dolore exercitationem nuri.Lorem ipsum dolor sit amet
                         consectetur
                         adipisicing elit. Animi, deserunt?</p>
                 </div>
-
                 <div class="">
-                    <img class="rounded-[50%] w-28 mx-auto" src="images/LogoTM round.jpg" alt="">
+                    <img class="rounded-[50%] w-28 mx-auto" src="5-white.png" alt="">
                     <p class="lg:text-xl text-sm text-white text-center w-3/4 mx-auto py-10">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Itaque dolore exercitationem nuri.Lorem ipsum dolor sit amet
                         consectetur
@@ -528,104 +538,111 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="container">
         <div class="">
-            <div class="flex flex lg:mx-32 md:mx-auto px-2  font-semibold   lg:text-3xl md:text-2xl text-xl  text-[#009933] lg:mt-32 mt-10"
+            <div class="flex md:mx-auto px-2  font-semibold   lg:text-2xl md:text-2xl text-xl  text-[#009933] lg:mt-20 mt-10"
                 data-aos="fade-up">
-                <span class=" text-green-600 text-">.</span>
+                <span class=" text-green-600">.</span>
                 <h1 class="">Blog's</h1>
                 <span class="">.</span>
             </div>
-            <div class="lg:flex px-2">
-                <h1 class="lg:mx-32 md:mx-auto font-semibold lg:text-6xl md:text-5xl text-3xl text-[#009933] lg:mt-4 mt-2"
+            <div class="lg:flex md:flex px-2">
+                <h1 class=" font-semibold lg:text-5xl md:text-5xl text-3xl text-[#009933] lg:mt-4 mt-2"
                     data-aos="fade-up">Latest News</h1>
-                <div class="px-2 mt-4 lg:pl-[23%]">
+                <div class="px-2 mt-4 lg:pl-[43%] md:pl-28">
                     <button
-                        class="Techmax   lg:px-10 md:px-16 px-4  border border-green-700 text-white bg-[#009933]  lg:py-4 md:py-4 py-1 lg:font-semibold lg:text-2xl text-lg hover:bg-white hover:text-[#009933] duration-500 "
+                        class="Techmax lg:px-10 md:px-16 px-4  border border-green-700 text-white bg-green-600  lg:py-2 md:py-4 py-1 lg:font-semibold lg:text-2xl text-lg hover:bg-white hover:text-[#009933] duration-500 "
                         data-aos="fade-up">See
-                        All Posts <i class=" fa-solid fa-arrow-right   lg:text-3xl text-xl  lg:ml-4 ml-2 "></i></button>
+                        All Posts <i class=" fa-solid fa-arrow-right   lg:text-2xl text-xl  lg:ml-4 ml-2 "></i></button>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:px-20 md:px-20 px-4 lg:mt-8 ">
-            <div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[90%] w-[100%] lg:h-[90%]  mt-20 lg:ml-[10%] md:ml-[10%] "
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10  md:px-20 px-4 lg:mt-4 ">
+            <div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[100%] w-[100%] lg:h-[85%]  mt-20 lg:ml-[10%] md:ml-[10%] "
                 data-aos="fade-up">
                 <img class="lg:h-60 h-48 w-[100%] rounded-sm  " src="23.jpg" alt="">
                 <div class="mt-2 lg:ml-8 px-2">
-                    <i class="fa-solid fa-bookmark lg:text-3xl text-xl text-green-600"><span
+                    <i class="fa-solid fa-bookmark lg:text-xl text-xl text-green-600"><span
                             class="ml-2 lg:px-2 text-sm">SEO</span></i>
                     |
-                    <i class="fa-solid fa-child lg:text-3xl text-xl ml-2 text-green-600"><span class="text-sm ml-2">kashif
+                    <i class="fa-solid fa-child lg:text-xl text-xl ml-2 text-green-600"><span
+                            class="text-sm ml-2">kashif
                             jamil</span></i>
                 </div>
                 <div class="px-2">
-                    <h1 class="lg:text-2xl text-lg mt-4 lg:font-semibold hover:text-green-600">The Role of Domain
+                    <h1 class="lg:text-2xl text-lg mt-2 lg:font-semibold hover:text-green-600">The Role of Domain
                         Names
                         <span class="">In SEO World Explaind</span>
                     </h1>
-                    <p class="lg:w-[90%] lg:text-lg text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class=" lg:text-base text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
                         Voluptates
                         voluptate soluta amet ratione repreh.</p>
                 </div>
                 <div class="">
-                    <button class="py-4 font-bold text-green-600  px-2 lg:text-xl text-sm">Read More<i
+                    <button class="py-4 font-semibold text-green-600  px-2 lg:text-base text-sm">Read More<i
                             class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
-            <div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[90%] w-[100%] lg:h-[90%]  mt-20 lg:ml-[10%] md:ml-[10%] "
+            <div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[100%] w-[100%] lg:h-[85%]  mt-20 lg:ml-[10%] md:ml-[10%] "
                 data-aos="fade-up">
                 <img class="lg:h-60 h-48 w-[100%] rounded-sm  " src="23.jpg" alt="">
                 <div class="mt-2 lg:ml-8 px-2">
-                    <i class="fa-solid fa-bookmark lg:text-3xl text-xl text-green-600"><span
+                    <i class="fa-solid fa-bookmark lg:text-xl text-xl text-green-600"><span
                             class="ml-2 lg:px-2 text-sm">SEO</span></i>
                     |
-                    <i class="fa-solid fa-child lg:text-3xl text-xl ml-2 text-green-600"><span class="text-sm ml-2">kashif
+                    <i class="fa-solid fa-child lg:text-xl text-xl ml-2 text-green-600"><span
+                            class="text-sm ml-2">kashif
                             jamil</span></i>
                 </div>
                 <div class="px-2">
-                    <h1 class="lg:text-2xl text-lg mt-4 lg:font-semibold hover:text-green-600">The Role of Domain
+                    <h1 class="lg:text-2xl text-lg mt-2 lg:font-semibold hover:text-green-600">The Role of Domain
                         Names
                         <span class="">In SEO World Explaind</span>
                     </h1>
-                    <p class="lg:w-[90%] lg:text-lg text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class=" lg:text-base text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
                         Voluptates
                         voluptate soluta amet ratione repreh.</p>
                 </div>
                 <div class="">
-                    <button class="py-4 font-bold text-green-600  px-2 lg:text-xl text-sm">Read More<i
+                    <button class="py-4 font-semibold text-green-600  px-2 lg:text-base text-sm">Read More<i
                             class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
-            </div><div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[90%] w-[100%] lg:h-[90%]  mt-20 lg:ml-[10%] md:ml-[10%] "
-            data-aos="fade-up">
-            <img class="lg:h-60 h-48 w-[100%] rounded-sm  " src="23.jpg" alt="">
-            <div class="mt-2 lg:ml-8 px-2">
-                <i class="fa-solid fa-bookmark lg:text-3xl text-xl text-green-600"><span
-                        class="ml-2 lg:px-2 text-sm">SEO</span></i>
-                |
-                <i class="fa-solid fa-child lg:text-3xl text-xl ml-2 text-green-600"><span class="text-sm ml-2">kashif
-                        jamil</span></i>
             </div>
-            <div class="px-2">
-                <h1 class="lg:text-2xl text-lg mt-4 lg:font-semibold hover:text-green-600">The Role of Domain
-                    Names
-                    <span class="">In SEO World Explaind</span>
-                </h1>
-                <p class="lg:w-[90%] lg:text-lg text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Voluptates
-                    voluptate soluta amet ratione repreh.</p>
-            </div>
-            <div class="">
-                <button class="py-4 font-bold text-green-600  px-2 lg:text-xl text-sm">Read More<i
-                        class="fa-solid fa-arrow-right ml-2"></i></button>
-            </div>
-        </div>    
+            <div class="hello border bg-green-100 border-green-400  rounded-lg lg:w-[100%] w-[100%] lg:h-[85%]  mt-20 lg:ml-[10%] md:ml-[10%] "
+                data-aos="fade-up">
+                <img class="lg:h-60 h-48 w-[100%] rounded-sm  " src="23.jpg" alt="">
+                <div class="mt-2 lg:ml-8 px-2">
+                    <i class="fa-solid fa-bookmark lg:text-xl text-xl text-green-600"><span
+                            class="ml-2 lg:px-2 text-sm">SEO</span></i>
+                    |
+                    <i class="fa-solid fa-child lg:text-xl text-xl ml-2 text-green-600"><span
+                            class="text-sm ml-2">kashif
+                            jamil</span></i>
+                </div>
+                <div class="px-2">
+                    <h1 class="lg:text-2xl text-lg mt-2 lg:font-semibold hover:text-green-600">The Role of Domain
+                        Names
+                        <span class="">In SEO World Explaind</span>
+                    </h1>
+                    <p class=" lg:text-base text-sm  mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                        Voluptates
+                        voluptate soluta amet ratione repreh.</p>
+                </div>
+                <div class="">
+                    <button class="py-2 font-semibold text-green-600 px-2 lg:text-base text-sm">Read More<i
+                            class="fa-solid fa-arrow-right ml-2"></i></button>
+                </div>
             </div>
         </div>
+        </div>
     </section>
-    <section class=" bg-gray-400 mt-10">
-        <div class="container lg:py-10 py-32 lg:grid lg:grid-cols-4 ">
+    <section class=" bg-green-600 mt-10">
+        <div class="container lg:py-10 py-32 lg:grid lg:grid-cols-4 md:grid-cols-2 ">
             <div class="flex flex-col gap-2">
                 <img class="lg:w-[60%] w-[40%] md:w-50%" " src=" images/Logo.png" alt="">
                 <p class=" text-gray-200 font-semibold text-sm   ">Lorem ipsum dolor
@@ -634,8 +651,6 @@
                     facere nulla at perspiciatis est velit labore dignissimos libero ratione debitis,
                     reprehenderit
                     distinctio obcaecati modi?</p>
-
-
                 <p class="text-gray-200 font-bold text-xl">Subscribe To Our New
                     Letter</p>
                 <div class="flex">
@@ -653,7 +668,6 @@
                     <li><a href="">Youetube</a></li>
                 </ul>
             </div>
-
             <div class="flex flex-col gap-5 text-white mx-auto lg:mt-20 mt-10">
                 <h1 class="text-xl font-medium">Resources</h1>
                 <ul class="flex flex-col gap-4 ">
@@ -684,6 +698,14 @@
             </div>
         </div>
     </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-button');
+        const dropdown = document.querySelector('.dropdown-menu');
+
+        toggleBtn.addEventListener("click", () => {
+            dropdown.classList.toggle('top-16');
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
@@ -709,9 +731,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $('.slider').slick({
-            dots: true,
-            prevArrow: null,
-         nextArrow: null,
             infinite: true,
             autoplay: true,
             speed: 300,
@@ -721,8 +740,8 @@
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                         infinite: true,
                         dots: true
                     }
@@ -749,12 +768,13 @@
     </script>
     <script>
         $('.slide').slick({
-            dots: false,
             infinite: true,
             autoplay: true,
+            prevArrow: null,
+         nextArrow: null,
             speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 3,
+            slidesToShow: 6,
+            slidesToScroll: 4,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -806,9 +826,9 @@
                         padding: {
                             DEFAULT: '1rem',
                             sm: '2rem',
-                            lg: '4rem',
-                            xl: '5rem',
-                            '2xl': '6rem',
+                            lg: '2rem',
+                            xl: '2rem',
+                            '2xl': '4rem',
                         },
                     },
                     backgroundImage: {
@@ -818,6 +838,6 @@
             }
         }
     </script>
+     <script src="tilt.js"></script>
 </body>
-
 </html>
