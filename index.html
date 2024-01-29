@@ -3,197 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars web</title>
-    <!-- tailwind link -->
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- config.js -->
-    <link rel="stylesheet" href="/assets/js/tailwind.js">
-    <!-- cdn links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="/assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-  body{
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-  }
+.main{
+    font-family: Arial, sans-serif;
+}
 </style>
-<body class="bg-[#00264d] ">
-    <!-- navbar start here -->
-  <nav class="flex mx-auto p-3  ">
-    <div class="container flex text-white">
-      <div class="px-4  flex ">
-       <a class="lg:text-2xl md:text-2xl text-xl font-semibold cursor-pointer whitespace-nowrap" href=""><span class="text-yellow-400">Car's</span> Factory </a>
-       <img class="w-16" src="assets/images/car4.png" alt=" srcset="">
+<body class="">
+    
+<nav class=" mx-auto bg-gray-600  py-4 flex px-3">
+    <div class="container mx-auto lg:flex items-center justify-between ">
+        <a class="Heading lg:text-4xl md:text-4xl text-2xl font-bold text-red-600 whitespace-nowrap" href="">Port<span class="text-gray-100">folio</span> </a>
+        <ul class="dropdown-menu md:flex ml-auto z-20 text-white lg:mt-0 mt-[-3%] gap-8 lg:space-y-0 space-y-2 lg:text-xl font-medium max-lg:bg-gray-600 w-full lg:py-1 py-6 justify-center items-center text-center  absolute -top-full left-0 lg:static">
+            <li class="cursor-pointer text-white">Home</li>
+            <li class="cursor-pointer text-gray-900 hover:text-white duration-500">Services</li>
+            <li class="cursor-pointer text-gray-900 hover:text-white duration-500">Page's</li>
+            <li class="cursor-pointer text-gray-900 hover:text-white duration-500">About</li>
+            <li class="cursor-pointer text-gray-900 hover:text-white duration-500">Contact Us</li>
+            <div class="">
+                <button class="py-1 px-2 bg-red-700  text-gray-100 shadow-2xl rounded-sm hover:bg-gray-900 duration-1000">Login now</button>
+            </div>      
+        </ul>
+      
     </div>
-      <ul class="dropdown-menu md:flex ml-auto gap-10  font-medium max-lg:bg-[#0e0e25] w-full lg:py-1 py-6 justify-center items-center text-center  absolute -top-full left-0 lg:static ">
-        <li class="hover:text-yellow-400 cursor-pointer duration-150 hover:underline"><a href="">Home</a></li>
-        <li  class="hover:text-yellow-400 cursor-pointer duration-150 hover:underline"><a href="">About</a></li>
-        <li  class="hover:text-yellow-400 cursor-pointer duration-150 hover:underline"><a href="">Contact</a></li>
-        <li  class="hover:text-yellow-400 cursor-pointer duration-150 hover:underline"><a href="">Page's</a></li>
-        <div class="lg:hidden py-auto mt-4">
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 whitespace-nowrap">Sign up</button>
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 whitespace-nowrap">Shop now <i class="fa-solid fa-car ml-1"></i></button>
+    <div class="text-white text-lg lg:hidden borger border-[1px] border-gray-500 px-2 ">
+      <i class="toggle-button fa-solid fa-bars"></i>
+    </div>
+</nav>
+<section class="mx-auto bg-black">
+    <div class=" bg-no-repeat bg-center bg-cover ">
+      <div class="bg-[#0b0b0f96]  h-screen flex flex-col justify-center items-center lg:pt-28">
+        <div class="flex flex-col md:3/4 lg:w-2/4 text-center gap-3">
+          <h3 class="Heading text-red-700 text-2xl font-medium">Beat IT Solution</h3>
+          <h1 class="Heading lg:text-7xl md:text-5xl sm:text-4xl text-4xl font-bold text-white tracking-wide leading-tight">An Innovative IT Solution Agency</h1>
+          <p class="font-serif  font-medium text-gray-100 lg:text-xl ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga suscipit minima ullam accusantium praesentium perferendis eaque nisi quod fugit!</p>
+         <div class="  lg:gap-4 justify-center lg:mt-5">
+          <button class="bg-red-700 lg:px-10  lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>
+          <button class="bg-gray-600 lg:px-10 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-red-700 hover:text-white duration-1000">Learn More</button>
+        </div>
+        </div>
       </div>
-      </ul>
-      <div class=" lg:flex gap-2 hidden">
-      <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 whitespace-nowrap">Sign up</button>
-      <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 whitespace-nowrap">Shop now <i class="fa-solid fa-car ml-1"></i></button>
-    </div>    
-    </div>
-    <div class="toggle-button lg:hidden">
-      <i class="fa-solid fa-bars text-xl text-white"></i>
   </div>
-  </nav>
-  <!-- section 1 -->
-  <section class="container mx-auto lg:h-[30vh] xl:h-[100vh] md:h-[60vh] h-[80vh] px-2  flex flex-col gap-3 md:gap-5 md:flex-row justify-center md:px-10 items-center">
-    <div class="flex flex-col gap-3 md:gap-5">
-      <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold  md:w-3/4 w-3/4 text-white ">We Provide <span class="text-yellow-400">Best Car's</span>  In The Wrold</h1>
-      <p class=" text-sm md:text-base  md:w-3/4 text-gray-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit odio itaque tenetur ratione!
-      </p>
-      <div class="">
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 ">Start now</button>
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 ">More..</button>
-      </div>
+  </section>
+  <!-- section for ratting -->
+  <section class="container mx-auto ">
+    <div class="lg:flex flex-col justify-center items-center gap-3 py-10">
+      <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-red-700 text-base px-2 tracking-wide leading-tight">Services</h1>
+      <h3 class="Heading font-semibold lg:text-4xl md:text-2xl text-xl lg:w-3/6 px-2 lg:text-center tracking-wide ">Services Built Specifically For Your Business</h3>
     </div>
-    <div class="mt-8">
-      <img src="/assets/images/car.png" alt="">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 px-3 gap-8 mt-8">
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-code text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide leading-tight">Web Design</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-file-code text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide   leading-tight">Web Development</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-crop text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide leading-tight">UI/UX Design</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-person text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide leading-tight">Web Cecurity</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-envelope-open-text text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide leading-tight">Digital Marketing</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
+      <div class="card border border-1 border-gray-300 shadow-2xl rounded-lg flex flex-col justify-center items-center px-4 py-8 gap-3">
+        <i class="fa-solid fa-laptop text-red-700 text-8xl font-bold"></i>
+        <h1 class="Heading font-semibold lg:text-2xl md:text-xl text-base  tracking-wide leading-tight">Programming</h1>
+        <p class="text-center text-gray-500">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+        <div>
+          <button class="bg-red-700 lg:px-8 text-white lg:py-3 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-gray-600 hover:text-white duration-1000">Read More</button>       
+         </div> 
+      </div>
     </div>
   </section>
-   <!-- section-2 -->
-   <section class="container ml-auto mr-auto px-2">
-    <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold  md:w-3/4 w-3/4 md:pl-10 text-yellow-400">Our Services</h1>
-    <div class="lg:flex md:flex  justify-center items-center lg:mt-16 md:mt-10 sm:mt-8">
-      <img class="md:w-96 lg:w-[40%] " src="assets/images/car3-removebg-preview.png" alt="">
-    <div>
-      <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold  md:w-3/4 w-3/4 text-white ">All Services Provide Here</h1>
-      <p class=" text-sm md:text-base  md:w-3/4 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vero a deserunt.
-      </p>
-      <div class="py-4">
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium  text-black hover:bg-yellow-500 duration-500 ">Click here</button>
-        <button class="px-2 py-1 bg-yellow-400 rounded-lg font-medium text-black hover:bg-yellow-500 duration-500 ">More..</button>
-      </div>
+  <section class="container mx-auto py-8 flex flex-col justify-center bg-slate-200 mt-10 items-center">
+    <div class="bg-gray-500 flex flex-col justify-center py-10 items-center lg:w-2/4 text-white">
+         <h1 class="text-red-700 text-4xl font-bold py-2 px-2">Login page</h1>
+         <p class="py-2  "><span class="flex fle items-start">Name</span>  <input class="rounded-sm bg-gray-300" type="text"></p>
+         <p class="py-2  "><span class="flex fle items-start">Father Name</span>  <input class="items-end rounded-sm bg-gray-300" type="text"></p>
+         <p class="py-2  "><span class="flex fle items-start">Mobile No</span>  <input class="items-end rounded-sm bg-gray-300" type="text"></p>
+         <p class="py-2  "><span class="flex fle items-start">Add message</span>  <input class="items-end rounded-sm bg-gray-300" type="text"></p>
+        
+         
     </div>
-    </div>
-    <div class="slider flex justify-center gap-10 items-center py-10 ">
-      <img class="w-40" src="assets/images/istockphoto-1157655660-1024x1024-removebg-preview.png" alt="" srcset="">
-      <img class="w-40" src="assets/images/car3-removebg-preview.png" alt="" srcset="">
-      <img class="w-40" src="assets/images/jaguar-xk-140-4412216_1280-removebg-preview (1).png" alt="" srcset="">
-      <img  class="w-40" src="assets/images/adam-opel-ag-3017042_1280.png" alt="" srcset="">      
-      <img class="w-40" src="assets/images/istockphoto-1157655660-1024x1024-removebg-preview.png" alt="" srcset="">
-      <img class="w-40" src="assets/images/car3-removebg-preview.png" alt="" srcset="">
-      <img class="w-40" src="assets/images/jaguar-xk-140-4412216_1280-removebg-preview (1).png" alt="" srcset="">
-      <img  class="w-40" src="assets/images/adam-opel-ag-3017042_1280.png" alt="" srcset="">
-    </div>
-   </section>
-   <!-- section-3 -->
-   <section class="container ml-auto mr-auto lg:mt-20 mt-4">
-    <div class="bg-black py-10 flex flex-col gap-2">   
-    <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold  md:w-3/4  text-white lg:px-8 px-2">OFFER <span class="text-yellow-400">20%  Discount</span></h1>
-      <div class="lg:flex ">
-    <p class="text-sm md:text-sm text-gray-400 lg:px-8  md:w-1/3 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit rerum corrupti quasi facere! Nostrum.</p>
-    <div class="lg:-mt-48 lg:pl-40 px-2">
-        <img  src="assets/images/istockphoto-152548949-1024x1024-removebg-preview.png" alt="" srcset="">
-    </div>
-  </div>
-  <div class="text-center flex flex-col justify-center items-center lg:px-20">
-    <h1 class="text-lg sm:text-3xl md:text-2xl lg:text-2xl font-semibold  md:w-3/4   text-yellow-400 px-2">EXPLOR OUR TOP DEAL FROM TOP RATED DEALERS</h1>
-    <p class="text-sm  md:w-3/4 text-gray-400 px-2  w-3/4 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod, quaerat Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos animi fugiat ullam ipsa deleniti, nemo maxime ipsum blanditiis dolore magni quam maiores debitis vel iusto exercitationem vitae! Quo, natus similique! distinctio aliquam dicta possimus?</p>
-  </div>
-  </div>
-   </section>
-   <!-- section-footer -->
-   <section class="bg-gray-900 mt-10 text-white ">
-    <div class="container grid md:grid-cols-4 grid-cols-1 items-center  gap-8  py-10 md:pl-28 px-4">
-      <div class=" ">
-        <div class="flex ">
-        <a class="lg:text-2xl md:text-2xl text-xl font-semibold cursor-pointer whitespace-nowrap text-white" href=""><span class="text-yellow-400">Car's</span> Factory </a>
-        <img class="w-20" src="assets/images/car4.png" alt=" srcset="">
-      </div>
-        <p class="text-sm text-gray-400 px-2 mt-2">Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eveniet dignissimos neque nam corrupti debitis quidem cupiditate mollitia non voluptate! ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquid labore voluptatum.</p>
-    
-    </div>
-    <div>
-      <ul>
-        <h1 class="text-yellow-400 text-lg font-medium">Catagries</h1>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px] mt-2"><i class="fa-regular fa-circle text-[6px]"></i> Tasla</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]" ><i class="fa-regular fa-circle text-[6px]"></i> Bugati</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"> <i class="fa-regular fa-circle text-[6px]"></i> Civic</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"><i class="fa-regular fa-circle text-[6px]"></i> Sonata</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"><i class="fa-regular fa-circle text-[6px]"></i> Mahraan</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <h1 class="text-yellow-400 text-lg font-medium">Helper</h1>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px] mt-2"><i class="fa-regular fa-circle text-[6px]"></i> Prepare</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px] whitespace-nowrap" ><i class="fa-regular fa-circle text-[6px]"></i> workers</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"> <i class="fa-regular fa-circle text-[6px]"></i> swipers</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"><i class="fa-regular fa-circle text-[6px]"></i> Cleaners</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px] whitespace-nowrap"><i class="fa-regular fa-circle text-[6px]"></i> All fcilities</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <h1 class="text-yellow-400 text-lg font-medium">Catagries</h1>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px] mt-2"><i class="fa-regular fa-circle text-[6px]"></i> Tasla</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]" ><i class="fa-regular fa-circle text-[6px]"></i> Bugati</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"> <i class="fa-regular fa-circle text-[6px]"></i> Civic</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"><i class="fa-regular fa-circle text-[6px]"></i> Sonata</li>
-        <li class="hover:text-yellow-400 duration-150 hover:ml-[2px]"><i class="fa-regular fa-circle text-[6px]"></i> Mahraan</li>
-      </ul>
-    </div>  
-  </div>
-   </section>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-  $('.slider').slick({
-      infinite: true,
-      autoplay: true,
-      prevArrow:null ,
-   nextArrow: null,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 2,
-      responsive: [
-          {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  infinite: true,
-                  dots: true
-              }
-          },
-          {
-              breakpoint: 600,
-              settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-              }
-          },
-          {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-              }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-      ]
-  });
-</script>
-<script>
-  const toggleBtn = document.querySelector('.toggle-button');
-  const dropdown = document.querySelector('.dropdown-menu');
-
-  toggleBtn.addEventListener("click", () => {
-      dropdown.classList.toggle('top-16');
-  })
-</script>
+  </section>
+  <script>
+    const toggleBtn = document.querySelector('.toggle-button');
+    const dropdown = document.querySelector('.dropdown-menu');
+  
+    toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle('top-16');
+    })
+  </script>
 </body>
 </html>
