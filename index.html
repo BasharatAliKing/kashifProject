@@ -14,6 +14,8 @@
     <script src="/assets/js/tailwind.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--JQuery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <style>
   .Heading{
@@ -23,16 +25,16 @@
 <body>
 <!-- nav bar section -->
     <nav class=" mx-auto bg-[#1842b6]  py-4 flex px-3">
-        <div class="container mx-auto lg:flex items-center justify-between ">
+        <div class="container  lg:flex items-center justify-between ">
             <a class="Heading lg:text-4xl md:text-4xl text-2xl font-bold text-white whitespace-nowrap" href="">High <span class="text-[#26d48c]">Tech</span> </a>
-            <ul class="dropdown-menu md:flex ml-auto z-20 text-white lg:mt-0 mt-[-3%] gap-4 lg:space-y-0 space-y-2 lg:text-xl font-medium max-lg:bg-[#1842b6] w-full lg:py-1 py-6 justify-center items-center text-center  absolute -top-full left-0 lg:static">
+            <ul id="navbar-menu" class="dropdown-menu flex flex-col ml-10 py-3 justify-center  text-white  gap-2  lg:text-xl font-medium max-lg:bg-[#1842b6]    text-center ">
                 <li class="cursor-pointer text-[#26d48c]">Home</li>
                 <li class="cursor-pointer hover:text-[#26d48c]">About</li>
                 <li class="cursor-pointer hover:text-[#26d48c]">Services</li>
                 <li class="cursor-pointer hover:text-[#26d48c]">Projects</li>
                 <div>
-                <li class="pagesmenu cursor-pointer hover:text-[#26d48c] whitespace-nowrap">Pages <i class="fa-solid fa-chevron-down text-[13px]"></i>
-                <ul class="page absolute bg-gray-50 sm:px-4 menu text-gray-500 z-20 text-base text-center rounded-lg border pl-20">
+                <li class=" pagesmenu cursor-pointer hover:text-[#26d48c] whitespace-nowrap ">Pages <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                <ul id="navbar-menu" class="dropdown-menu page absolute bg-gray-50 sm:px-4 menu text-gray-500 z-20 text-base mx-auto text-center rounded-lg border lg:pl-20 px-4">
                     <li class="cursor-pointer"><a href="">Our Blog</a></li>
                     <li class="cursor-pointer"><a href="">Our Team</a></li>
                     <li class="cursor-pointer"><a href="">Testimonial</a></li>
@@ -42,6 +44,23 @@
             </div>
                 <li class="cursor-pointer hover:text-[#26d48c]">Contact</li>
             </ul>
+            <ul class="md:flex  text-white space-x-3 lg:mt-0 gap-2 lg:space-y-0 space-y-2 hidden lg:text-xl font-medium max-lg:bg-[#1842b6]   lg:py-1 py-6 text-center left-0 lg:static">
+              <li class="cursor-pointer text-[#26d48c]">Home</li>
+              <li class="cursor-pointer hover:text-[#26d48c]">About</li>
+              <li class="cursor-pointer hover:text-[#26d48c]">Services</li>
+              <li class="cursor-pointer hover:text-[#26d48c]">Projects</li>
+              <div>
+              <li class=" pagesmenu cursor-pointer hover:text-[#26d48c] whitespace-nowrap ">Pages <i class="fa-solid fa-chevron-down text-[13px]"></i>
+              <ul class=" page absolute bg-gray-50  menu text-gray-500 z-20 text-base mx-auto text-center rounded-lg border  px-4">
+                  <li class="cursor-pointer"><a href="">Our Blog</a></li>
+                  <li class="cursor-pointer"><a href="">Our Team</a></li>
+                  <li class="cursor-pointer"><a href="">Testimonial</a></li>
+                  <li class="cursor-pointer"><a href="">404 Pages</a></li>
+              </ul>
+              </li>
+          </div>
+              <li class="cursor-pointer hover:text-[#26d48c]">Contact</li>
+          </ul>
             <div class="lg:flex hidden md:hidden text-white items-center gap-2">  
                     <i class="cursor-pointer fa-solid fa-magnifying-glass text-lg "></i>
                     <input class="rounded-lg" type="type">
@@ -50,8 +69,8 @@
                   </div>
                   </div>
         </div>
-        <div class="text-white text-lg lg:hidden borger border-[1px] border-gray-500 px-2 ">
-          <i class="toggle-button fa-solid fa-bars"></i>
+        <div class="text-white text-lg lg:hidden px-2 ">
+          <i id="navbar-btn" class="fa-solid fa-bars"></i>
         </div>
     </nav>
     <!-- 1 first section -->
@@ -206,14 +225,14 @@
             <img class="rounded-xl" src="assets/images/blog-1.jpg" alt="">
             <div class="flex gap-16 justify-center items-center -mt-2">
             <button class="bg-[#26d48c] whitespace-nowrap  -mt-16 lg:px-8 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Read More</button>       
-              <img class="rounded-[50%] absolute mt-10 border border-2xl border-white" src="assets/images/admin.jpg" alt="" srcset="">
-            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right  mt-2 ml-3 text-center text-white"></i>
+              <img class="rounded-[50%] absolute mt-10 ml-2 border border-2xl border-white" src="assets/images/admin.jpg" alt="" srcset="">
+            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right ml-3 text-center text-white"></i>
             </button>       
           </div>
-          <div class="flex flex-col justify-center items-center mt-20 gap-3 px-2">
+          <div class="flex flex-col justify-center items-center mt-20 gap-3 md:px-2">
            <h1 class="Heading font-normal text-2xl">By Daniel Martin</h1>
            <h3 class="text-xl text-[#26d48c] font-semibold">24 March 2023</h3>
-           <p class="text-gray-500 lg:text-xl  text-center">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+           <p class="text-gray-500 lg:text-xl  text-center px-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
         <div class=" lg:mt-12  bg-[#1842b6] py-2 w-full text-center lg:space-x-16 rounded-b-lg whitespace-nowrap">
            <span class=" w-full  lg:text-xl text-sm text-white"><i class="fa-solid fa-share px-2 text-[#26d48c]"></i>5432 share</span>  
            <span class=" w-full lg:text-xl text-sm text-white"><i class="fa-solid fa-comment px-2 text-[#26d48c]"></i>5 Comment</span>  
@@ -224,36 +243,36 @@
           </div>
           <div class="relative bg-gray-200  rounded-lg mt-16 lg:mt-0">
             <button class="bg-blue-700 lg:ml-48 ml-32 absolute -mt-4 lg:px-8 whitespace-nowrap text-white lg:py-4 md:px-8 px-4 py-1 rounded-lg lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Read More</button>       
-            <img class="rounded-xl" src="assets/images/blog-1.jpg" alt="">
-            <div class="flex gap-16 justify-center items-center -mt-2">
+            <img class="rounded-xl" src="assets/images/blog-2.jpg" alt="">
+            <div class="flex gap-16 justify-center items-center -mt-2 ">
             <button class="bg-[#26d48c] whitespace-nowrap  -mt-16 lg:px-8 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Read More</button>       
-              <img class="rounded-[50%] absolute mt-10 border border-2xl border-white" src="assets/images/admin.jpg" alt="" srcset="">
-            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right  mt-2 ml-3 text-center text-white"></i>
+              <img class="rounded-[50%] absolute mt-10 border border-2xl ml-2 border-white" src="assets/images/admin.jpg" alt="" srcset="">
+            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right   ml-3 text-center text-white"></i>
             </button>       
           </div>
-          <div class="flex flex-col justify-center items-center mt-20 gap-3 px-2">
+          <div class="flex flex-col justify-center items-center mt-20 gap-3 md:px-2">
            <h1 class="Heading font-normal text-2xl">By Daniel Martin</h1>
            <h3 class="text-xl text-[#26d48c] font-semibold">24 March 2023</h3>
-           <p class="text-gray-500 lg:text-xl  text-center">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-        <div class=" lg:mt-12 bg-[#1842b6] py-2 w-full text-center whitespace-nowrap lg:space-x-16 rounded-b-lg">
-           <span class=" w-full  lg:text-xl text-sm text-white"><i class="fa-solid fa-share px-2 text-[#26d48c]"></i>5432 share</span>  
-           <span class=" w-full lg:text-xl text-sm text-white"><i class="fa-solid fa-comment px-2 text-[#26d48c]"></i>5 Comment</span>  
+           <p class="text-gray-500 lg:text-xl  text-center px-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+        <div class=" lg:mt-12 bg-[#1842b6] py-2  w-full text-center whitespace-nowrap lg:space-x-16  rounded-b-lg">
+           <span class="lg:text-xl text-sm text-white"><i class="fa-solid fa-share px-2 text-[#26d48c]"></i>5432 share</span>  
+           <span class=" lg:text-xl text-sm text-white"><i class="fa-solid fa-comment px-2 text-[#26d48c]"></i>5 Comment</span>  
           </div>
           </div>
           </div>
           <div class="relative bg-gray-200  rounded-lg mt-16 lg:mt-0">
             <button class="bg-blue-700 lg:ml-48 ml-32 absolute -mt-4 lg:px-8 whitespace-nowrap text-white lg:py-4 md:px-8 px-4 py-1 rounded-lg lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Read More</button>       
-            <img class="rounded-xl" src="assets/images/blog-1.jpg" alt="">
+            <img class="rounded-xl" src="assets/images/blog-3.jpg" alt="">
             <div class="flex gap-16 justify-center items-center -mt-2">
             <button class="bg-[#26d48c] whitespace-nowrap  -mt-16 lg:px-8 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Read More</button>       
-              <img class="rounded-[50%] absolute mt-10 border border-2xl border-white" src="assets/images/admin.jpg" alt="" srcset="">
-            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right  mt-2 ml-3 text-center text-white"></i>
+              <img class="rounded-[50%] absolute mt-10 border border-2xl ml-2 border-white" src="assets/images/admin.jpg" alt="" srcset="">
+            <button class="bg-[#26d48c] whitespace-nowrap -mt-16 lg:px-10 text-white lg:py-2 md:px-8 px-4 py-1 rounded-3xl lg:text-lg text-base font-medium hover:bg-[#1842b6] hover:text-white duration-1000">Share<i class="fa-solid fa-arrow-right   ml-3 text-center text-white"></i>
             </button>       
           </div>
-          <div class="flex flex-col justify-center items-center mt-20 gap-3 px-2">
+          <div class="flex flex-col justify-center items-center mt-20 gap-3 md:px-2">
            <h1 class="Heading font-normal text-2xl">By Daniel Martin</h1>
            <h3 class="text-xl text-[#26d48c] font-semibold">24 March 2023</h3>
-           <p class="text-gray-500 lg:text-xl  text-center">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+           <p class="text-gray-500 lg:text-xl  text-center px-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
         <div class=" lg:mt-12  bg-[#1842b6] py-2 w-full text-center lg:space-x-16 whitespace-nowrap rounded-b-lg">
            <span class=" w-full  lg:text-xl text-sm text-white"><i class="fa-solid fa-share px-2 text-[#26d48c]"></i>5432 share</span>  
            <span class=" w-full lg:text-xl text-sm text-white"><i class="fa-solid fa-comment px-2 text-[#26d48c]"></i>5 Comment</span>  
@@ -271,14 +290,14 @@
     </section>
    <section class="container">
     <div class="team-slider ">
-    <div class=" team-content m-3 flex flex-col gap-8 items-center  overflow-hidden  bg-gray-100">
-      <div class="flex flex-col gap-8"> 
+    <div class=" team-content m-3 flex flex-col  justify-center gap-8 items-center  overflow-hidden  bg-gray-100">
+      <div class="flex flex-col   gap-8"> 
         <div class="rounded-full p-5 relative z-20 mx-auto w-[50%] -mt-60 bg-white"> 
            <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-1.jpg" alt="" srcset="">
         </div>
         <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2 md:gap-2 lg:text-2xl md:text-xl sm:text-sm  pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 sm:gap-1 md:gap-2 lg:text-2xl md:text-xl sm:text-sm  pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -292,8 +311,8 @@
           <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-3.jpg" alt="" srcset="">
        </div>
         <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 gap-1 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -307,8 +326,8 @@
           <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-4.jpg" alt="" srcset="">
        </div>
          <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 gap-1 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -322,8 +341,8 @@
           <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-1.jpg" alt="" srcset="">
        </div>
         <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 gap-1 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -337,8 +356,8 @@
           <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-4.jpg" alt="" srcset="">
        </div>
         <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 gap-1 md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -352,8 +371,8 @@
           <img class="  rounded-[50%]   border ring-8 ring-[#26d48c]" src="assets/images/team-3.jpg" alt="" srcset="">
        </div>
          <h1 class="Heading text-4xl text-center">Full Name</h1>
-      <h2 class="text-2xl text-center text-[#26d48c]">Distination</h2>
-      <div class="flex justify-center items-center lg:gap-3 sm:gap-2  md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
+      <h2 class="md:text-1xl text-xl lg:text-2xl text-center text-[#26d48c]">Distination</h2>
+      <div class="flex justify-center items-center lg:gap-3 gap-1  md:gap-2 lg:text-2xl md:text-xl text-lg pb-2 text-white">
       <span><i class="fa-brands fa-facebook-f  bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-instagram bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
       <span><i class="fa-brands fa-twitter bg-[#26d48c] p-4 py-3 rounded-[50%]"></i></span>
@@ -369,11 +388,11 @@
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 py-10">
         <div class="bg-gray-200 flex flex-col gap-2 ">
-          <div class="flex gap-6 p-8">
+          <div class="flex flex-col justify-center items-center text-center gap-3 mt-2">
           <img src="assets/images/testimonial-4.jpg" alt="" srcset="">
           <div>
-          <h1 class="text-2xl text-green-500 font-semibold">Clints</h1>
-          <p class="text-2xl text-gray-600">process</p>
+          <h1 class="md:text-1xl text-xl lg:text-2xl text-green-500 font-semibold">Clints</h1>
+          <p class="md:text-1xl text-xl lg:text-2xl text-gray-600">process</p>
           <div class="  text-blue-600 ">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -383,12 +402,12 @@
         </div>
        </div>
         <p class="text-center p-3 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ratione. Facere enim natus doloremque ratione, culpa totam,     </div>
-          <div class="bg-gray-200 flex flex-col gap-2 ">
-            <div class="flex gap-6 p-8">
+          <div class="bg-gray-200 flex flex-col gap-2 pt-2">
+            <div class="flex flex-col justify-center items-center text-center gap-3 mt-2">
             <img src="assets/images/testimonial-2.jpg" alt="" srcset="">
             <div>
-            <h1 class="text-2xl text-green-500 font-semibold">Clints</h1>
-            <p class="text-2xl text-gray-600">process</p>
+            <h1 class="md:text-1xl text-xl lg:text-2xl text-green-500 font-semibold">Clints</h1>
+            <p class="md:text-1xl text-xl lg:text-2xl text-gray-600">process</p>
             <div class="  text-blue-600 ">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -399,11 +418,11 @@
          </div>
           <p class="text-center p-3 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ratione. Facere enim natus doloremque ratione, culpa totam,     </div>
             <div class="bg-gray-200 flex flex-col gap-2 ">
-              <div class="flex gap-6 p-8">
+              <div class="flex flex-col justify-center items-center text-center gap-3 mt-2">
               <img src="assets/images/testimonial-3.jpg" alt="" srcset="">
               <div>
-              <h1 class="text-2xl text-green-500 font-semibold">Clints</h1>
-              <p class="text-2xl text-gray-600">process</p>
+              <h1 class="md:text-1xl text-xl lg:text-2xl text-green-500 font-semibold">Clints</h1>
+              <p class="md:text-1xl text-xl lg:text-2xl text-gray-600">process</p>
               <div class="  text-blue-600 ">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -466,7 +485,7 @@
       <div class="py-3">
       <hr class="container bg-gray-600 h-[1px] border-0">
     </div>
-    <div class="container flex justify-between text-[#26d48c] text-xl">
+    <div class="container lg:flex md:flex flex flex-col-2 justify-between text-[#26d48c] text-xl">
     <h1 class=" py-2 ">&copy; Your Site Name</h1>
     <h2 class="text-white">Designed By <span class="text-[#26d48c]">HTML Codex</span> Distributed By <span class="text-blue-800">ThemeWagon</span></h2>
   </div>    
@@ -556,15 +575,14 @@ $('.slider').slick({
 });
       
     </script>
-     <script>  
-          </script>
-    <script>
-      const toggleBtn = document.querySelector('.toggle-button');
-      const dropdown = document.querySelector('.dropdown-menu');
-    
-      toggleBtn.addEventListener("click", () => {
-          dropdown.classList.toggle('top-16');
+     <script> 
+     $(document).ready(function(){
+      $('#navbar-menu').hide();
+      $('#navbar-btn').click(function(){
+        $('#navbar-menu').slideToggle('slow');
       })
-    </script>
+     }) 
+          </script>
+          
 </body>
 </html>
